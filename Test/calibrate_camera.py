@@ -2,7 +2,7 @@ import cv2
 from collections import deque
 from numpy import mean
 
-face_samples = cv2.CascadeClassifier("Test/haarcascade_frontalface_default.xml")
+face_samples = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 cap = cv2.VideoCapture(0)
 frameHeights = deque(maxlen=50)
 frameWidths = deque(maxlen=50)
